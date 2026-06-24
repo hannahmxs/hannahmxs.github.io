@@ -2,66 +2,15 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Schein und Sein | Unsere Faszination mit Glitzer</title>
+    <title>Schein und Sein | Spread the sprkle</title>
+    <link rel="stylesheet" href="assets/css/screen.css">
 </head>
 <body>
 
-    <header>
-        <h1>Schein und Sein</h1>
-        <nav>
-            <button onclick="alert('Hier gelangen Sie zur Katalog-Galerie')">Zur Katalog-Ansicht</button>
-        </nav>
-    </header>
-
-    <hr>
-
-    <section id="projektbeschreibung">
-        <h2>Über das Semesterprojekt</h2>
-        <p>Dieses Projekt erforscht die universelle menschliche Anziehungskraft auf glitzernde, schimmernde und reflektierende Oberflächen.</p>
-        <p><strong>Die zwei Ebenen der Untersuchung:</strong></p>
-        <ul>
-            <li><em>Visuell:</em> Eine fotografische Dokumentation von Objekten, die Licht brechen, reflektieren und streuen.</li>
-            <li><em>Analytisch:</em> Eine wissenschaftliche Auseinandersetzung mit der Psychologie hinter diesem visuellen Reiz.</li>
-        </ul>
-    </section>
-
-    <section id="theorie">
-        <h3>Warum glänzt es? Die wissenschaftliche Perspektive</h3>
-        <details>
-            <summary>Die Wasser-Theorie (Savanna Hypothesis)</summary>
-            <p>Eine zentrale Theorie besagt, dass unsere Faszination für Glanz in unseren evolutionären Wurzeln liegt. Glitzernde Lichtreflexe auf einer Oberfläche signalisierten unseren Vorfahren das Vorhandensein von Wasser – ein kritisches Element für das Überleben.</p>
-        </details>
-        
-        <details>
-            <summary>Optik & Physik</summary>
-            <p>Wenn Licht auf eine unebene oder flüssige Oberfläche trifft, wird es in verschiedene Richtungen gestreut oder gebrochen. Diese dynamische Veränderung des Lichts bei der kleinsten Bewegung nimmt unser Gehirn als "lebendig" und "kostbar" wahr.</p>
-        </details>
-    </section>
-
-    <section id="interaktion">
-        <h3>Erforsche das Phänomen</h3>
-        <p>Wähle eine Kategorie aus, um mehr Details zu erfahren:</p>
-        <button type="button" onclick="console.log('Analyse: Wasserreflexionen')">Wasseroberflächen</button>
-        <button type="button" onclick="console.log('Analyse: Künstlicher Glanz')">Metallische Oberflächen</button>
-    </section>
-
-    <footer>
-        <p>2026 | Projekt: Schein und Sein | HAW Hamburg, DMI | Kurs: it`s not a book</p>
-    </footer>
+    <h1>Schein und Sein</h1>
     
+    <div id="katalog" class="katalog-grid"></div>
 
-    <script>
-    // 1. Die Datei laden
-    fetch('csvjson-2.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log("Daten geladen:", data); 
-            // Hier kommt später der Code hin, der die Daten in dein HTML schreibt
-        })
-        .catch(error => console.error('Fehler beim Laden:', error));
-</script>
-
-
-
+    <script src="main.js"></script>
 </body>
 </html>

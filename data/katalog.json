@@ -1,0 +1,210 @@
+[
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/muschel.jpg",
+    "titel": "Muschel",
+    "text": "Außen Schlamm, innen ein Kosmos. Echte Arbeit, über Jahre im Stillen erledigt. Perlmutt ist der Beweis dafür, dass Schönheit in der Natur oft nur ein Nebenprodukt des Überlebens ist.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/blauer_vogel.jpg",
+    "titel": "Blauer Vogel",
+    "text": "Evolutionäre Verkaufsförderung: Er ist ein Meister des biologischen Marketings. Dieser Vogel glänzt nicht für den Spiegel, sondern für den Fortbestand. Er leuchtet, um zu überleben.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/libelle.jpg",
+    "titel": "Libelle",
+    "text": "Vier Flügel wie Kirchenfenster, aber die Predigt ist kurz: Ich bin schneller als dein Blick.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/goldkaefer.jpg",
+    "titel": "Goldkäfer",
+    "text": "Wer spiegelt, wird unsichtbar. Ein brillanter Trick von Mutternatur.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/pflanze.jpg",
+    "titel": "Pflanze",
+    "text": "Ein natürlicher Blickfang: Blicke bleiben hängen, Sonnenstrahlen prallen ab, so bleibt das Wasser in der Pflanze.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "natur",
+    "form_typ": "halbkreis",
+    "@bild_pfad": "assets/img/natur/fischschuppen.jpg",
+    "titel": "Fischschuppen",
+    "text": "Die Urform des Schimmers. Hier dient Glanz nicht der Dekoration, sondern dem Überleben – ein Leuchten aus Notwendigkeit.",
+    "path_extension": "natur"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/haare.jpg",
+    "titel": "Haare",
+    "text": "In einer Welt, die den Verfall fürchtet, ist Hochglanz das einzige Mittel gegen die Zeit. Wer spiegelt, lässt sich nicht greifen.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/nasser_ruecken.jpg",
+    "titel": "Nasser Rücken",
+    "text": "Ein nasser Rücken kann auch entzücken. Nicht jede Strahlkraft kommt von innen.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/weisse_strumpfhose.jpg",
+    "titel": "Weiße Strumpfhose",
+    "text": "Warum wollen wir Beine, die aussehen wie verpacktes Geschenkpapier? Die Antwort mag bereits durchschimmern.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/blaue_schuhe.jpg",
+    "titel": "Blaue Schuhe",
+    "text": "Mehr Strahl- als Schrittkraft. Poliert für große Auftritte.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/ritterruestung.jpg",
+    "titel": "Ritterrüstung",
+    "text": "Das Klimpern beim Laufen ist der historische Vorläufer von ‚Schau her, ich bin wichtig‘. Eine glänzende Rüstung signalisiert Reinheit, Disziplin und Status und soll den Gegner regelrecht blenden.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/glaenzendes_kleid.jpg",
+    "titel": "Glänzendes Kleid",
+    "text": "Ein funkelndes Outfit zieht alle Blicke auf sich.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "mensch",
+    "form_typ": "viertelkreis",
+    "@bild_pfad": "assets/img/mensch/weisse_leggins.jpg",
+    "titel": "Weiße Leggins",
+    "text": "Eine zweite Haut aus Synthetik. Sie verspricht makellose Straffheit und pure Funktionalität.",
+    "path_extension": "mensch"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/kaffeepackung.jpg",
+    "titel": "Kaffeepackung",
+    "text": "Er glänzt weiter, obwohl er längst nichts mehr zu sagen hat. Verpackungen spielen mit unserer Erwartungshaltung, dass Glanz etwas Wertvolles verspricht, dabei sind die immer mehr Schein als Sein.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/tablettenpackung.jpg",
+    "titel": "Tablettenpackung",
+    "text": "Glänzende Blisterpackungen vermitteln ein Gefühl von Frische, Reinheit, Hochwertigkeit und Sterilität.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/stromkasten.jpg",
+    "titel": "Silberner Stromkasten",
+    "text": "Ein Objekt, das dazu verdammt ist, unsichtbar zu sein, fordert durch eine polierte Oberfläche plötzlich Aufmerksamkeit ein. Auch die Bürokratie braucht ihre Momente der Eitelkeit.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/gartenzwerg.jpg",
+    "titel": "Gartenzwerg",
+    "text": "Er glitzert so sehr, dass es wehtut. Ein stolzer Wächter, der versucht Leben in einen toten Vorgarten zu bringen.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/girlande.jpg",
+    "titel": "Happy Birthday Girlande",
+    "text": "Das Echo einer Freude, die längst verflogen ist. Ein Fest hat aufgehört, aber der Glanz weigert sich noch, unbedeutend zu sein.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/auto.jpg",
+    "titel": "Goldenes Auto",
+    "text": "Ein echter High Performer – zumindest optisch. Der Eindruck fährt voraus.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/luma.jpg",
+    "titel": "Luma",
+    "text": "Frank Gehrys Architektur will nicht nur gesehen werden, sie will, dass man sich selbst in ihr verliert. Ein gigantisch schöner Spiegel für den Narzissmus der Kunstwelt.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/kuchen.jpg",
+    "titel": "Schokoladenkuchen",
+    "text": "Der Schein des Kuchens sättigt das Auge, bevor der erste Bissen fällt.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/ostereier.jpg",
+    "titel": "Ostereier",
+    "text": "Was versteckt sich denn da? Ein leckeres Versprechen in Aluminium. Für die Kinder ist es pures Gold.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/luftballon.jpg",
+    "titel": "Luftballon",
+    "text": "Außen ein perfekter Glanz, innen einfach nur heiße Luft.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/weihnachtskugel.jpg",
+    "titel": "Weihnachtskugeln",
+    "text": "Die dunkelste Jahreszeit verlangt nach Reflexion. Glänzende Aussichten hängen am seidenen Faden und nichts leuchtet heller als die Nostalgie des Weihnachtszaubers.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/stuehle.jpg",
+    "titel": "Stühle",
+    "text": "Kann man den Alltag durch oberflächliches Funkeln aufwerten? Ein Möbelstück, das schreit: ‚Ich bin etwas Besonderes‘, und dabei doch nur Staub fängt.",
+    "path_extension": "produkt"
+  },
+  {
+    "kategorie": "produkt",
+    "form_typ": "kreis",
+    "@bild_pfad": "assets/img/produkt/armreifen.jpg",
+    "titel": "Armreifen",
+    "text": "Die zivilisierte Form der Fessel. Unser Gehirn dürstet nach dem Glanz von Wasser, also hängen wir uns totes Metall um den Arm. Gefangen im goldenen Käfig unserer eigenen Aufmerksamkeit.",
+    "path_extension": "produkt"
+  }
+]
