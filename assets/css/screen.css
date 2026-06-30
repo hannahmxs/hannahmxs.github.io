@@ -8,16 +8,29 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #eef6fc; /* Ein schönes, helles Pastellblau */
   padding: 40px 20px;
   color: #333;
 }
 
+/* Header linksbündig */
+.page-header {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  text-align: left;
+}
+
 h1 {
   font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #222;
+  text-transform: uppercase; /* Zwingt Text in Versalien */
+  letter-spacing: 2px;       /* Gibt den Buchstaben etwas Luft */
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #5d7a8c;
+  margin-top: 5px;
 }
 
 /* Das Raster-Layout */
@@ -32,10 +45,10 @@ h1 {
 .card {
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
   transition: transform 0.2s ease;
-  overflow: 12px; /* WICHTIG: Rundet auch das Bild oben mit ab */
-  display: flex; /* Neu: Damit sich die Karte streckt */
+  overflow: hidden; /* Sorgt dafür, dass Bild und Text in die abgerundeten Ecken passen */
+  display: flex;
   flex-direction: column;
 }
 
@@ -45,25 +58,11 @@ h1 {
 
 .card img {
   width: 100%;
-  height: 200px; /* Feste Höhe für einheitliches Bildformat (optional, aber oft besser) */
-  object-fit: cover; /* Schneidet das Bild passend zu, statt es zu verzerren */
+  height: 220px;
+  object-fit: cover;
   display: block;
-  /* Kein border-radius mehr hier, das macht jetzt der Container (.card) */
 }
 
-/* Neuer Container nur für den Text, damit er Abstand hat */
 .card-content {
-  padding: 20px; /* Hier kommt der Weißraum hin */
-}
-
-/* Falls du Überschriften/Text in der Karte hast, setzt das die Abstände korrekt */
-.card-content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.card-content p {
-    font-size: 0.95rem;
-    color: #666;
+  padding: 20px;
 }
