@@ -1,4 +1,4 @@
-/* 1. Reset korrigiert: margin: 10px auf alles ist zu viel. */
+/* Grundlegende Einstellungen */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernere Schrift */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9; /* Dezenter Hintergrund */
-  padding: 40px 20px; /* Mehr Luft zum Rand */
+  background-color: #f9f9f9;
+  padding: 40px 20px;
   color: #333;
 }
 
@@ -23,29 +23,47 @@ h1 {
 /* Das Raster-Layout */
 .katalog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Etwas breiter für Karten */
-  gap: 30px; /* Mehr Platz zwischen den Karten */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
   max-width: 1200px;
-  margin: 0 auto; /* Zentriert das Grid */
+  margin: 0 auto;
 }
 
 .card {
-  background: #ffffff; /* Weiße Karte */
-  border: none; /* Kein harter Rahmen */
-  padding: 20px;
-  border-radius: 12px; /* Abgerundete Ecken wirken moderner */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Sanfter Schatten statt Border */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
+  overflow: 12px; /* WICHTIG: Rundet auch das Bild oben mit ab */
+  display: flex; /* Neu: Damit sich die Karte streckt */
+  flex-direction: column;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Kleiner Effekt beim Drüberfahren */
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Feste Höhe für einheitliches Bildformat (optional, aber oft besser) */
+  object-fit: cover; /* Schneidet das Bild passend zu, statt es zu verzerren */
   display: block;
-  border-radius: 8px; /* Auch Bilder abrunden */
-  margin-bottom: 15px;
+  /* Kein border-radius mehr hier, das macht jetzt der Container (.card) */
+}
+
+/* Neuer Container nur für den Text, damit er Abstand hat */
+.card-content {
+  padding: 20px; /* Hier kommt der Weißraum hin */
+}
+
+/* Falls du Überschriften/Text in der Karte hast, setzt das die Abstände korrekt */
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #666;
 }
