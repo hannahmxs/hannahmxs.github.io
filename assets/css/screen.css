@@ -1,35 +1,51 @@
-/* Grundlegende Einstellungen */
+/* 1. Reset korrigiert: margin: 10px auf alles ist zu viel. */
 * {
-  margin: 10px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: impact;
-  padding: 10px;
-  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernere Schrift */
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Dezenter Hintergrund */
+  padding: 40px 20px; /* Mehr Luft zum Rand */
+  color: #333;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
 }
 
 /* Das Raster-Layout */
 .katalog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Etwas breiter für Karten */
+  gap: 30px; /* Mehr Platz zwischen den Karten */
+  max-width: 1200px;
+  margin: 0 auto; /* Zentriert das Grid */
 }
 
 .card {
-    border: 1px solid #ddd;
-    padding: 10px;
+  background: #ffffff; /* Weiße Karte */
+  border: none; /* Kein harter Rahmen */
+  padding: 20px;
+  border-radius: 12px; /* Abgerundete Ecken wirken moderner */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Sanfter Schatten statt Border */
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Kleiner Effekt beim Drüberfahren */
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Auch Bilder abrunden */
+  margin-bottom: 15px;
 }
