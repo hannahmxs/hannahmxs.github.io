@@ -2,23 +2,25 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, nobel, sans-serif;
   line-height: 1.6;
   background-color: #EFF3F5;
-  padding: 40px 10px;
+  padding: 40px 5%; /* Mehr Platz am Rand */
   color: #333;
   position: relative;
   min-height: 200vh;
 }
 
+/* Header linksbündig */
 .page-header {
-  max-width: 650px;
-  margin: 0 auto 30px auto;
+  max-width: 90%;      /* Gleiche Breite wie der Katalog */
+  margin: 0 0 30px 5%; /* 5% Abstand von links, wie beim Katalog */
+  text-align: left;
 }
 
 h1 {
   font-size: 4rem;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'nobel', sans-serif;
   color: #63889C;
   line-height: 0.9;
 }
@@ -32,17 +34,32 @@ h1 {
 }
 
 .katalog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 650px;
-  margin: 0 auto;
-  gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exakt 2 Spalten */
+    gap: 30px; 
+    width: 90%; 
+    margin-left: 5%; /* Startet exakt an der gleichen linken Kante wie der Header */
+    margin-right: 5%;
+    padding: 0;
+}
+
+.katalog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwingt das Grid auf genau 2 Spalten */
+    gap: 30px; /* Abstand zwischen den Bildern */
+    width: 90%; 
+    margin: 0 auto;
+    padding: 0;
 }
 
 .card {
-  background: #EFF3F5;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Sorgt dafür, dass das Bild sein Seitenverhältnis behält */
+    display: block;
 }
 
 .card-header {
@@ -52,7 +69,7 @@ h1 {
 }
 
 .card-header h3 {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'nobel', sans-serif;
   color: #63889C;
   font-size: 1.8rem;
 }
@@ -63,7 +80,6 @@ h1 {
   height: 350px;
   object-fit: cover;
   display: block;
-  margin-top: 0.2px;
 }
 
 .card-content {
@@ -80,50 +96,49 @@ h1 {
     font-style: normal;
 }
 
-/* Zentraler Bereich für alle dekorativen Buchstaben */
 .floating-letter {
     position: absolute;
     font-family: 'scheinundsein', sans-serif;
     pointer-events: none;
     user-select: none;
-    z-index: 1000; /* Legt Buchstaben hinter die Inhalte */
+    z-index: 1000;
     opacity: 0.5;
     line-height: 1;
     font-weight: bold;
 }
-.pos-1  { top: 5%;    left: 5%; }
-.pos-2  { top: 10%;   right: 10%; }
-.pos-3  { top: 20%;   left: 20%; }
-.pos-4  { top: 30%;   right: 5%; }
-.pos-5  { top: 40%;   left: 10%; }
-.pos-6  { top: 50%;   right: 20%; }
-.pos-7  { top: 60%;   left: 5%; }
-.pos-8  { top: 70%;  right: 10%; }
-.pos-9  { top: 80%;  left: 15%; }
-.pos-10 { top: 90%;  right: 5%; }
-.pos-11 { top: 100%;  left: 10%; }
-.pos-12 { top: 110%;  right: 15%; }
-.pos-13 { top: 120%;  left: 5%; }
-.pos-14 { top: 230%; left: 40%; }
-.pos-14 { top: 240%; left: 10%; }
-.pos-15 { top: 250%; right: 5%; }
-.pos-16 { top: 260%; left: 20%; }
-.pos-17 { top: 270%; right: 15%; }
-.pos-18 { top: 280%; left: 5%; }
-.pos-19 { top: 290%; right: 10%; }
-.pos-20 { top: 300%; left: 25%; }
-.pos-21 { top: 315%; right: 5%; }
-.pos-22 { top: 320%; left: 10%; }
-.pos-23 { top: 330%; right: 20%; }
-.pos-24 { top: 340%; left: 15%; }
-.pos-25 { top: 350%; right: 10%; }
-.pos-26 { top: 360%; left: 5%; }
-.pos-27 { top: 470%; right: 15%; }
-.pos-28 { top: 480%; left: 30%; }
-}
-.silber { color: rgba(216, 224, 235, 1.0) !important;}
+
+/* Positionen */
+.pos-1  { top: 4%;    left: 5%; }
+.pos-2  { top: 8%;    right: 10%; }
+.pos-3  { top: 16%;   left: 20%; }
+.pos-4  { top: 20%;   right: 5%; }
+.pos-5  { top: 24%;   left: 10%; }
+.pos-6  { top: 28%;   right: 20%; }
+.pos-7  { top: 32%;   left: 5%; }
+.pos-8  { top: 36%;   right: 10%; }
+.pos-9  { top: 40%;   left: 15%; }
+.pos-10 { top: 44%;   right: 5%; }
+.pos-11 { top: 48%;   left: 10%; }
+.pos-12 { top: 52%;   right: 15%; }
+.pos-13 { top: 56%;   left: 5%; }
+.pos-14 { top: 60%;   left: 10%; }
+.pos-15 { top: 64%;   right: 5%; }
+.pos-16 { top: 68%;   left: 20%; }
+.pos-17 { top: 72%;   right: 15%; }
+.pos-18 { top: 76%;   left: 5%; }
+.pos-19 { top: 80%;   right: 10%; }
+.pos-20 { top: 84%;   left: 25%; }
+.pos-21 { top: 88%;   right: 5%; }
+.pos-22 { top: 92%;   left: 10%; }
+.pos-23 { top: 96%;   right: 20%; }
+.pos-24 { top: 100%;  left: 15%; }
+.pos-25 { top: 104%;  right: 10%; }
+.pos-26 { top: 108%;  left: 5%; }
+.pos-27 { top: 112%;  right: 15%; }
+
+.silber { color: rgba(220, 225, 235, 1.0) !important; }
 .gold   { color: rgba(212, 175, 55, 0.6) !important; }
 
-.size-s { font-size: 15rem; }
-.size-m { font-size: 25rem; }
-.size-l { font-size: 40rem; }
+.size-s { font-size: 10rem; }
+.size-m { font-size: 20rem; }
+.size-l { font-size: 30rem; }
