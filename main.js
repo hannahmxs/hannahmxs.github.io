@@ -1,44 +1,46 @@
 // Store all loaded catalogue data globally
 let allData = [];
 
-// Load the JSON file from the data folder
+// 1. Lade die JSON-Daten
 fetch('data/katalog.json')
     .then(response => {
-        console.log('JSON response:', response);
-        if (!response.ok) {
-            throw new Error('JSON file could not be loaded');
-        }
+        if (!response.ok) throw new Error('JSON file could not be loaded');
         return response.json();
     })
     .then(data => {
-        console.log('Loaded JSON data:', data);
         allData = data;
-        renderKatalog(allData); 
+        renderKatalog(allData);
+        // Erst wenn die Daten geladen sind, die Buchstaben hinzufügen
+        addFloatingLetters(); 
     })
-    .catch(error => {
-        console.error('Error loading JSON:', error);
-        const container = document.getElementById('katalog');
-        if (container) {
-            container.innerHTML = '<div class="loading">Error loading data</div>';
-        }
-    });
+    .catch(error => console.error('Error loading JSON:', error));
 
-// Render catalogue items into the HTML page
+// 2. Rendering-Funktion
 function renderKatalog(items) {
     const container = document.getElementById('katalog');
-    if (!container) return;
+    if (!container || !Array.isArray(items)) return;
 
-    let html = '';
-    items.forEach(function(item) {
-        const bild = item['@bild_pfad'];
-        const titel = item.titel;
-        const text = item.text;
-
-        html += '<div class="card">' +
-                '<img src="' + bild + '" alt="' + titel + '">' +
-                '<h3>' + titel + '</h3>' +
-                '<p>' + text + '</p>' +
-                '</div>';
-    });
-    container.innerHTML = html;
+    container.innerHTML = items.map(item => `
+        <div class="card">
+            <div class="card-header">
+                <h3>${item.titel}</h3>
+            </div>
+            <img src="${item['@bild_pfad']}" alt="${item.titel}">
+            <div class="card-content">
+                <p>${item.text}</p>
+            </div>
+        </div>
+    `).join('');
 }
+
+// 3. Hier muss die Funktion definiert sein!
+function addFloatingLetters() {
+    console.log("Floating Letters werden hinzugefügt...");
+    // Hier steht dein Code, der die Buchstaben erzeugt.
+    // Beispiel: document.querySelectorAll('.floating-letter').forEach(...)
+}
+
+// 4. DOMContentLoaded abwarten
+window.addEventListener('DOMContentLoaded', () => {
+    // Hier ggf. Initialisierungen, die NICHT vom JSON abhängen
+});
