@@ -69,7 +69,7 @@ h1 {
 }
 
 .card-header h3 {
-  font-family: 'DIN Medium', sans-serif;
+  font-family: 'din-medium', sans-serif;
   color: #63889C;
   font-size: 1.8rem;
 }
