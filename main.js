@@ -2,7 +2,7 @@
 let allData = [];
 
 // 1. Lade die JSON-Daten
-fetch('assets/data/katalog.json')
+fetch('./assets/data/katalog.json')
     .then(response => {
         if (!response.ok) throw new Error('JSON file could not be loaded');
         return response.json();
