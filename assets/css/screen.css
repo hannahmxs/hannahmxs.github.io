@@ -2,7 +2,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, nobel, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, nobel, DIN Bold, DIN Medium, sans-serif;
   line-height: 1.6;
   background-color: #EFF3F5;
   padding: 40px 5%; /* Mehr Platz am Rand */
@@ -20,7 +20,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family: 'nobel', sans-serif;
+  font-family: 'DIN Bold', sans-serif;
   color: #63889C;
   line-height: 0.9;
 }
@@ -69,7 +69,7 @@ h1 {
 }
 
 .card-header h3 {
-  font-family: 'nobel', sans-serif;
+  font-family: 'DIN Medium', sans-serif;
   color: #63889C;
   font-size: 1.8rem;
 }
