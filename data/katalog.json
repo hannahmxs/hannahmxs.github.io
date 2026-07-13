@@ -82,14 +82,14 @@
     "kategorie": "produkt",
     "form_typ": "kreis",
     "@bild_pfad": "assets/img/produkt/herz_luftballon.jpg",
-    "titel": "Luftballon",
+    "titel": "Herz-Luftballon",
     "text": "Außen ein perfekter Glanz, innen einfach nur heiße Luft.",
     "path_extension": "produkt"
   },
   {
     "kategorie": "produkt",
     "form_typ": "kreis",
-    "@bild_pfad": "assets/img/produkt/luftballon2.jpg",
+    "@bild_pfad": "assets/img/produkt/luftballon.jpg",
     "titel": "Luftballon",
     "text": "Die dunkelste Jahreszeit verlangt nach Reflexion. Glänzende Aussichten hängen am seidenen Faden und nichts leuchtet heller als die Nostalgie des Weihnachtszaubers.",
     "path_extension": "produkt"
