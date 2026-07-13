@@ -2,7 +2,7 @@
     {
     "kategorie": "natur",
     "form_typ": "halbkreis",
-    "@bild_pfad": "assets/img/natur/libelle2.jpg",
+    "@bild_pfad": "assets/img/natur/libelle.jpg",
     "titel": "Libelle",
     "text": "Vier Flügel wie Kirchenfenster, aber die Predigt ist kurz: Ich bin schneller als dein Blick.",
     "path_extension": "natur"
