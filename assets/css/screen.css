@@ -2,7 +2,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', nobel, din-bold, DIN Medium, sans-serif;
+  font-family: 'Segoe UI', nobel, din-bold, din-medium, sans-serif;
   line-height: 1.6;
   background-color: #EFF3F5;
   padding: 40px 5%; /* Mehr Platz am Rand */
